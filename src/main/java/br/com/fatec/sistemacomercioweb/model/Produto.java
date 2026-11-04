@@ -12,19 +12,14 @@ public class Produto {
     private String descricao;
     private BigDecimal preco;
     private Integer estoque;
-    private String historico_precos;
-    private String itensvendas;
     public Produto() {
     }
     public Produto(String nome, String descricao,
-                   BigDecimal preco, Integer estoque,
-                   String historico_precos, String itensvendas) {
+                   BigDecimal preco, Integer estoque) {
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
         this.estoque = estoque;
-        this.historico_precos = historico_precos;
-        this.itensvendas = itensvendas;
     }
     public Long getId() {
         return id;
@@ -56,18 +51,6 @@ public class Produto {
     public void setEstoque(Integer estoque) {
         this.estoque = estoque;
     }
-    public String getHistorico_precos() {
-        return historico_precos;
-    }
-    public void setHistorico_precos(String historico_precos) {
-        this.historico_precos = historico_precos;
-    }
-    public String getItensvendas() {
-        return itensvendas;
-    }
-    public void setItensvendas(String itensvendas) {
-        this.itensvendas = itensvendas;
-    }
     @Override
     public String toString() {
         return "Produto{" +
@@ -76,8 +59,6 @@ public class Produto {
                 ", descricao='" + descricao + '\'' +
                 ", preco=" + preco +
                 ", estoque=" + estoque +
-                ", historico_precos='" + historico_precos + '\'' +
-                ", itensvendas='" + itensvendas + '\'' +
                 '}';
     }
 }

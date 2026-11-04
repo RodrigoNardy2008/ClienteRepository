@@ -16,12 +16,12 @@ public class ProdutoController {
  @GetMapping
  public String listarTodos(Model model) {
  model.addAttribute("produtos", service.listarTodos());
- return "produtos/lista";
+ return "produto/lista";
  }
  @GetMapping("/novo")
  public String novo(Model model) {
  model.addAttribute("produto", new Produto());
- return "produtos/formulario";
+ return "produto/formulario";
  }
  @PostMapping("/salvar")
  public String salvar(@ModelAttribute Produto produto) {

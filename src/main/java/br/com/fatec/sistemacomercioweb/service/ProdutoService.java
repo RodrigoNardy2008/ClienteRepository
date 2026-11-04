@@ -31,8 +31,6 @@ public class ProdutoService {
         produto.setDescricao(dados.getDescricao());
         produto.setPreco(dados.getPreco());
         produto.setEstoque(dados.getEstoque());
-        produto.setHistorico_precos(dados.getHistorico_precos());
-        produto.setItensvendas(dados.getItensvendas());
         return repository.save(produto);
     }
     public void excluir(Long id) {
